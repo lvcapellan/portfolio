@@ -1,0 +1,52 @@
+body {
+	background-image: url(../images/bg.jpeg);
+	/*background-color: #4885ed;*/
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+	color: #FFD700;
+	font-family: 'Gloria Hallelujah', cursive;
+	/*height: 100vh;*/
+}
+
+h1	{
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 3px;
+}
+
+h2 {
+	letter-spacing: 5px;
+	color: yellow;
+	margin-top: 0;
+}
+
+#me {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border-width: 5px;
+	border-style: dotted;
+	border-color: #bb0a1e;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+.bio {
+	width: 100%;
+	font-size: 20px;
+	color: #FFDF00;
+	line-height: 1.5;
+	background-color: rgba(69,69,69, 0.33);
+	border-style: dotted;
+	border-color: #333;
+}
+
+.container {
+	width: 700px;
+	margin:0 auto;
+	text-align: center;
+}
