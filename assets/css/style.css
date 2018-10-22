@@ -1,52 +1,195 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Exo 2', sans-serif;
+	color: rgba(10,10,10,1);
+}
+
 body {
-	background-image: url(../images/bg.jpeg);
-	/*background-color: #4885ed;*/
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-repeat: no-repeat;
-	color: #FFD700;
-	font-family: 'Gloria Hallelujah', cursive;
-	/*height: 100vh;*/
+	background-color: rgba(245,245,245,.69);
 }
 
-h1	{
-	font-size: 40px;
-	margin-top: 0;
-	margin-bottom: 0;
-	letter-spacing: 3px;
+.animated.delay-6s {
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
 }
 
-h2 {
-	letter-spacing: 5px;
-	color: yellow;
-	margin-top: 0;
+.animated.delay-7s {
+  -webkit-animation-delay: 4.4s;
+  animation-delay: 4.4s;
 }
 
-#me {
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	border-width: 5px;
-	border-style: dotted;
-	border-color: #bb0a1e;
-	margin-top: 50px;
-	margin-bottom: 0px;
+.animated.delay-8s {
+  -webkit-animation-delay: 4.6s;
+  animation-delay: 4.6s;
 }
 
-.bio {
-	width: 100%;
-	font-size: 20px;
-	color: #FFDF00;
-	line-height: 1.5;
-	background-color: rgba(69,69,69, 0.33);
-	border-style: dotted;
-	border-color: #333;
+.animated.delay-9s {
+  -webkit-animation-delay: 4.8s;
+  animation-delay: 4.8s;
 }
 
-.container {
-	width: 700px;
-	margin:0 auto;
+.animated.delay-10s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.animated.delay-11s {
+  -webkit-animation-delay: 5.2s;
+  animation-delay: 5.2s;
+}
+
+.animated.delay-12s {
+  -webkit-animation-delay: 5.4s;
+  animation-delay: 5.4s;
+}
+
+.animated.delay-13s {
+  -webkit-animation-delay: 5.6s;
+  animation-delay: 5.6s;
+}
+
+.animated.delay-14s {
+  -webkit-animation-delay: 5.8s;
+  animation-delay: 5.8s;
+}
+
+.animated.delay-15s {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
+}
+
+.my-picture img{
+	height: 215px;
+	width: 200px;
+}
+
+#my-fullname {
+	font-size: 2rem;
+	font-weight: bolder;
+	padding-bottom: 2px;
+	border-bottom: 1px solid rgba(10,10,10,.5);
+}
+
+#my-title {
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	opacity: .8;	
+}
+
+.my-contacts a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: inherit;
+}
+
+
+.my-social-links a img {
+	height: 25px;
+	width: 25px;
+}
+
+.my-social-links a img[src*="gitlab"] {
+	height: 25px;
+	width: 27px;
+}
+
+.my-social-links a img:hover{
+	transform: scale(1.2);
+}
+
+.my-email a img {	
+	height: 15px;
+	width: 20px;
+}
+
+.my-email a img:hover{
+	transform: scale(1.2);
+}
+
+.my-phone {
+	letter-spacing: 1px;
+}
+
+.my-phone img {
+	height: 15px;
+	width: 14px;
+}
+
+.my-phone a img:hover {
+	transform: scale(1.2);
+}
+
+.my-skills img {
+	height: 30px;
+	width: 30px;
+}
+
+.my-projects {
+	border-top: 1px solid hsla(0,0%,0%,.1);	
+}
+
+#my-projects-clicker {
+	text-decoration: none;
+	font-weight: bolder;
+	color: inherit;
+	font-size: 2.5rem;
+}
+
+.my-projects .card {
+	width: 18rem;
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+	opacity: .8;
+}
+
+.my-projects .card:hover {
+	opacity: 1;
+	border: 1px solid hsla(0,0%,0%,.3);
+	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.4);
+	transform: scale(1.1);
+}
+
+.my-projects .card-title {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.my-projects .card-text{
+	color: rgba(10,10,10,.8);
+}
+
+.my-projects .btn:hover {
+	color: crimson;
+}
+
+#my-footer-clicker {
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+	font-size: 1.5rem;
+}
+
+
+/*Mobile Styles*/
+@media only screen and (max-width: 400px){
+
+}
+
+/*Tablet Styles*/
+@media only screen and (min-width: 401px) and (max-width: 960px){
+
+}
+
+/*Desktop Styles*/
+@media only screen and (min-width: 961px){
+
 }
