@@ -149,14 +149,22 @@ body {
 	font-size: 2.5rem;
 }
 
+#capstone1 {
+	text-decoration: none;
+}
+
+#capstone2{
+	text-decoration: none;
+}
+
+#capstone3{
+	text-decoration: none;
+}
+
 .my-projects .card {
 	width: 18rem;
 	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 	opacity: .8;
-}
-
-#my-projects a{
-	text-decoration: none;
 }
 
 .my-projects .card:hover {
