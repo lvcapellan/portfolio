@@ -163,6 +163,7 @@ body {
 
 .my-projects .card {
 	width: 18rem;
+	height: 32rem;
 	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 	opacity: .8;
 }
