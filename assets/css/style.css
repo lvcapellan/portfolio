@@ -8,7 +8,8 @@
 }
 
 body {
-	background-color: rgba(245,245,245,.69);
+	background-image: linear-gradient(to bottom right, rgba(245,245,245,.69), rgba(230,230,230,.69), rgba(215,215,215,.69), rgba(200,200,200,.69), rgba(185,185,185,.69));
+	background-size: cover;
 }
 
 .animated.delay-6s {
@@ -68,7 +69,7 @@ body {
 	text-align: center;
 }
 
-.my-picture img{
+#my-picture img{
 	height: 215px;
 	width: 200px;
 }
@@ -87,59 +88,63 @@ body {
 	opacity: .8;	
 }
 
-.my-contacts a {
+#my-contacts a {
 	text-decoration: none;
 	font-weight: bolder;
 	color: inherit;
 }
 
 
-.my-social-links a img {
+#my-social-links a img {
 	height: 25px;
 	width: 25px;
 }
 
-.my-social-links a img[src*="gitlab"] {
+#my-social-links a img[src*="gitlab"] {
 	height: 25px;
 	width: 27px;
 }
 
-.my-social-links a img:hover{
+#my-social-links a img:hover{
 	transform: scale(1.2);
 	transition: transform .3s;
 }
 
-.my-email a img {	
+#my-email a img {
 	height: 15px;
 	width: 20px;
 }
 
-.my-email a img:hover{
+#my-email a img:hover{
 	transform: scale(1.2);
 	transition: transform .3s;
 }
 
-.my-phone {
+#my-phone {
 	letter-spacing: 1px;
 }
 
-.my-phone img {
-	height: 15px;
-	width: 14px;
-}
-
-.my-phone a img:hover {
+#my-phone i:hover {
 	transform: scale(1.2);
 	transition: transform .3s;
 }
 
-.my-skills img {
+#my-resume {
+	letter-spacing: 1px;
+}
+
+#my-resume i:hover{
+	transform: scale(1.2);
+	transition: transform .3s;
+}
+
+#my-skills img {
 	height: 30px;
 	width: 30px;
 }
 
-.my-projects {
-	border-top: 1px solid hsla(0,0%,0%,.1);	
+#my-projects {
+	border-top: 1px solid hsla(0,0%,0%,.1);
 }
 
 #my-projects-clicker {
@@ -161,14 +166,14 @@ body {
 	text-decoration: none;
 }
 
-.my-projects .card {
+#my-projects .card {
 	width: 18rem;
 	height: 32rem;
 	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 	opacity: .8;
 }
 
-.my-projects .card:hover {
+#my-projects .card:hover {
 	opacity: 1;
 	border: 1px solid hsla(0,0%,0%,.3);
 	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.4);
@@ -176,12 +181,12 @@ body {
 	transition: transform .3s;
 }
 
-.my-projects .card-title {
+#my-projects .card-title {
 	font-weight: bold;
 	letter-spacing: 2px;
 }
 
-.my-projects .card-text{
+#my-projects .card-text{
 	color: rgba(10,10,10,.8);
 }
 
@@ -208,7 +213,6 @@ body {
 	#my-projects-clicker {
 		font-size: 1.9rem;
 	}
-
 }
 
 /*Mobile Styles*/
@@ -224,5 +228,4 @@ body {
 	#my-email {
 		font-size: 85%;
 	}
-
 }

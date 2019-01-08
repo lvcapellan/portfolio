@@ -18,7 +18,7 @@
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
@@ -33,14 +33,14 @@
 	<!-- main container -->
 	<div class="container-fluid">
 		<!-- photo -->
-		<div class="my-picture row mt-5 animated fadeIn delay-1s">
+		<div id="my-picture" class="row mt-5 animated fadeIn delay-1s">
 			<div class="col-12">
 				<img class="mx-auto centered rounded-circle" src="assets/images/me.png">
 			</div>
 		</div>
 		<!-- end of photo -->
 		<!-- name -->
-		<div class="my-name row mt-3">
+		<div id="my-name" class="row mt-3">
 			<div class="col-12">
 				<div class="centered animated fadeInDown delay-2s">
 					<span id="my-fullname" class="mx-auto"> Lorenz Vincent V. Capellan </span>
@@ -50,8 +50,8 @@
 		</div>
 		<!-- end of name -->
 		<!-- contacts -->
-		<div class="my-contacts mt-3 text-center">	
-			<div class="my-social-links row animated fadeIn delay-3s"> 
+		<div id="my-contacts" class="mt-3 text-center">
+			<div id="my-social-links" class="row animated fadeIn delay-3s">
 				<div class="col-12">
 					<!-- facebook -->
 					<a class="mr-1" href="https://www.facebook.com/xfacistx" target="_blank"><img src="assets/images/facebook.png"alt="facebook"></a>
@@ -61,7 +61,7 @@
 					<a href="https://github.com/lvcapellan" target="_blank"><img src="assets/images/github.png"alt="github"></a>
 				</div>
 			</div>
-			<div id="my-email" class="my-email row animated fadeInLeft delay-3s">
+			<div id="my-email" class="row animated fadeInLeft delay-3s">
 				<div class="col-12">
 					<!-- gmail -->
 					<small>
@@ -69,42 +69,50 @@
 					</small>
 				</div>
 			</div>
-			<div class="my-phone row animated fadeInRight delay-3s">
+			<div id="my-phone" class="row animated fadeInRight delay-3s">
 				<div class="col-12">
 					<!-- phone -->
 					<small>
-						<a href="tel:639751404317"><img src="assets/images/phone.png"alt="phone"> +63 975 1404317 </a>
+						<a href="tel:639751404317"><i class="fas fa-phone"></i> +63 975 1404317 </a>
 					</small>
 				</div>
-			</div>		
+			</div>
+			<div id="my-resume" class="row animated fadeInRight delay-3s">
+				<div class="col-12">
+					<!-- resume -->
+					<small>
+						<a href="assets/files/lvcapellan_resume.pdf" download><i class="fas fa-file-download"></i> Download Resume </a>
+					</small>
+				</div>
+			</div>
 		</div>
 		<!-- end of contacts -->
 		<!-- skills -->
-		<div class="my-skills mt-2 text-center">
+		<div id="my-skills" class="mt-2 text-center">
 			<!-- html5 -->
-			<div class="my-html5 row">
+			<div id="my-html5" class="row">
 				<div class="col-12">
-					<img class="animated fadeInLeft delay-6s slower" src="assets/images/html5.png">
+					<img class="animated fadeInLeft delay-6s slower" src="assets/images/html5.png" alt="html5">
 					<i class="fas fa-star animated fadeInLeft delay-7s slower"></i>
 					<i class="fas fa-star animated fadeInLeft delay-8s slower"></i>
 					<i class="fas fa-star animated fadeInLeft delay-9s slower"></i>
 					<i class="fas fa-star animated fadeInLeft delay-10s slower"></i>
 					<i class="fas fa-star-half-alt animated fadeInLeft delay-11s slower"></i>
-				</div>		
+				</div>
 			</div>
 			<!-- css -->
-			<div class="my-css row">
+			<div id="my-css" class="row">
 				<div class="col-12">
-					<img class="animated fadeInLeft delay-7s slow" src="assets/images/css.png" alt="html5">
+					<img class="animated fadeInLeft delay-7s slow" src="assets/images/css.png" alt="css">
 					<i class="fas fa-star animated fadeInLeft delay-8s slow"></i>
 					<i class="fas fa-star animated fadeInLeft delay-9s slow"></i>
 					<i class="fas fa-star animated fadeInLeft delay-10s slow"></i>
 					<i class="fas fa-star animated fadeInLeft delay-11s slow"></i>
 					<i class="far fa-star animated fadeInLeft delay-12s slow"></i>
-				</div>		
+				</div>
 			</div>
 			<!-- javascript -->
-			<div class="my-javascript row">
+			<div id="my-javascript" class="row">
 				<div class="col-12">
 					<img class="animated fadeInLeft delay-8s" src="assets/images/javascript.png" alt="javascript">
 					<i class="fas fa-star animated fadeInLeft delay-9s"></i>
@@ -112,10 +120,10 @@
 					<i class="fas fa-star animated fadeInLeft delay-11s"></i>
 					<i class="fas fa-star-half-alt animated fadeInLeft delay-12s"></i>
 					<i class="far fa-star animated fadeInLeft delay-13s"></i>
-				</div>		
+				</div>
 			</div>
 			<!-- php -->
-			<div class="my-php row">
+			<div id="my-php" class="row">
 				<div class="col-12">
 					<img class="animated fadeInLeft delay-9s fast" src="assets/images/php.png" alt="php">
 					<i class="fas fa-star animated fadeInLeft delay-10s fast"></i>
@@ -123,10 +131,10 @@
 					<i class="fas fa-star animated fadeInLeft delay-12s fast"></i>
 					<i class="far fa-star animated fadeInLeft delay-13s fast"></i>
 					<i class="far fa-star animated fadeInLeft delay-14s fast"></i>
-				</div>		
+				</div>
 			</div>
 			<!-- mysql -->
-			<div class="my-mysql row">
+			<div id="my-mysql" class="row">
 				<div class="col-12">
 					<img class="animated fadeInLeft delay-10s faster"  src="assets/images/mysql.png" alt="mysql">
 					<i class="fas fa-star animated fadeInLeft delay-11s faster"></i>
@@ -134,26 +142,26 @@
 					<i class="fas fa-star-half-alt animated fadeInLeft delay-13s faster"></i>
 					<i class="far fa-star animated fadeInLeft delay-14s faster"></i>
 					<i class="far fa-star animated fadeInLeft delay-15s faster"></i>
-				</div>		
+				</div>
 			</div>
 		</div>
 		<!-- end of skills -->
 		<!-- description -->
-		<div class="my-description row mt-4 text-center animated fadeInDown delay-4s">
+		<div id="my-description" class="row mt-4 text-center animated fadeInDown delay-4s">
 			<div class="col-12">
 				<p class="p-0 m-0">
 					<strong>&#8220;</strong>
 					<em>And here I thought that the probability of existence of such a magnificent being which possesses the holy trinity qualities of <strong>good looks</strong>, <strong>gifted-level intellect</strong>, and a <strong>golden heart</strong> is nigh impossible... but then, a fortuitous event happened; I met this gentleman. I was baffled by the revelation, still skeptical, I perused further&mdash; and after much scrutiny, I fathomed that he is not perfect after all... I found out that he is <strong>broke</strong>&mdash; he has <strong>no money</strong>! Even though I discovered that he is flawed, I am still amazed that I get to experience interacting and basking in the presence of such wonderful person. I pity the world for not having the chance to witness true greatness by depriving this glorious individual of proper opportunities. So, whoever is reading this: I beg of you, for the love of all humanity, <strong>hire him</strong>!</em>
 					<strong>&#8221;</strong>
 					<span class="text-muted font-weight-light">
-						&mdash;Anonymous			
+						&mdash;Anonymous
 					</span>
 				</p>
 			</div>
 		</div>
 		<!-- end of description -->
 		<!-- projects -->
-		<div id="my-projects" class="my-projects row mx-auto mt-3 mb-5 animated fadeInUpBig delay-5s">
+		<div id="my-projects" class="row mx-auto mt-3 mb-5 animated fadeInUpBig delay-5s">
 			<div class="col-12 my-1 mx-auto text-center">
 				<a id="my-projects-clicker" href="#my-projects">
 					<i class="fas fa-angle-double-down"></i> Sample Projects <i class="fas fa-angle-double-down"></i>
@@ -199,7 +207,7 @@
 		</div>
 		<!-- end of projects -->
 		<!-- footer -->
-		<div class="my-footer row mx-auto animated fadeIn delay-13s">
+		<div id="my-footer" class="row mx-auto animated fadeIn delay-13s">
 			<div class="col-12 mt-1 mx-auto text-center mb-4">
 				<a id="my-footer-clicker" href="#">
 					<i class="fas fa-angle-double-up"></i> Back to top <i class="fas fa-angle-double-up"></i>
