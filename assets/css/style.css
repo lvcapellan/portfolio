@@ -85,7 +85,7 @@ body {
 	font-size: 1rem;
 	font-weight: bold;
 	letter-spacing: 2px;
-	opacity: .8;	
+	opacity: .8;
 }
 
 #my-contacts a {
@@ -94,29 +94,30 @@ body {
 	color: inherit;
 }
 
-
-#my-social-links a img {
-	height: 25px;
-	width: 25px;
-}
-
-#my-social-links a img[src*="gitlab"] {
-	height: 25px;
-	width: 27px;
-}
-
-#my-social-links a img:hover{
+#my-social-links a i {
 	transform: scale(1.2);
+}
+
+
+#my-social-links a i[class*="facebook"] {
+	color: #3B5998;
+}
+
+#my-social-links a i[class*="gitlab"] {
+	color: #E2432A;
+}
+
+#my-social-links a i:hover{
+	transform: scale(1.4);
 	transition: transform .3s;
 }
 
-#my-email a img {
-	height: 15px;
-	width: 20px;
+#my-email a i {
+	transform: scale(1.2);
 }
 
-#my-email a img:hover{
-	transform: scale(1.2);
+#my-email a i:hover{
+	transform: scale(1.4);
 	transition: transform .3s;
 }
 
@@ -138,9 +139,36 @@ body {
 	transition: transform .3s;
 }
 
-#my-skills img {
-	height: 30px;
-	width: 30px;
+#my-skills th {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#my-skills td {
+	padding-right: 1px;
+	padding-left: 1px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#my-html5 th i {
+	color: #F16529;
+}
+
+#my-css th i {
+	color: #4E68C7;
+}
+
+#my-javascript th i {
+	color: #F0DB4F;
+}
+
+#my-php th i {
+	/*color: #4E68C7;*/
+}
+
+#my-mysql th i {
+	/*color: #4E68C7;*/
 }
 
 #my-projects {
@@ -171,6 +199,8 @@ body {
 	height: 32rem;
 	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 	opacity: .8;
+	background-image: linear-gradient(to bottom right, rgba(255,255,255,.69), rgba(245,245,245,.69), rgba(235,235,235,.69), rgba(225,225,225,.69), rgba(215,215,215,.69), rgba(205,205,205,.69));
+	background-size: cover;
 }
 
 #my-projects .card:hover {
