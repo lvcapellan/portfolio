@@ -12,6 +12,15 @@ body {
 	background-size: cover;
 }
 
+img {
+	object-fit: cover;
+}
+
+.my-skills {
+	color: rgba(240, 240, 240, 1);
+	background-color: rgba(10,10,10,1);
+}
+
 .animated.delay-6s {
   -webkit-animation-delay: 4.2s;
   animation-delay: 4.2s;
@@ -295,6 +304,10 @@ body {
 	box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.4);
 	transform: scale(1.1);
 	transition: transform .3s;
+}
+
+.card-img-top {
+	height: 230px;
 }
 
 #my-projects .card-title {
