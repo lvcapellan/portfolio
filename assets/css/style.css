@@ -71,6 +71,16 @@ img {
   animation-delay: 6s;
 }
 
+.animated.delay-16s {
+	-webkit-animation-delay: 6.2s;
+	animation-delay: 6.2s;
+}
+
+.animated.delay-17s {
+	-webkit-animation-delay: 6.4s;
+	animation-delay: 6.4s;
+}
+
 .centered {
 	display: flex;
 	align-items: center;
@@ -277,18 +287,6 @@ img {
 	font-size: 2.5rem;
 }
 
-#capstone1 {
-	text-decoration: none;
-}
-
-#capstone2{
-	text-decoration: none;
-}
-
-#capstone3{
-	text-decoration: none;
-}
-
 #my-projects .card {
 	width: 18rem;
 	height: 32rem;
@@ -296,6 +294,7 @@ img {
 	opacity: .8;
 	background-image: linear-gradient(to bottom right, rgba(255,255,255,.99), rgba(250,250,250,.99), rgba(240,240,240,.99), rgba(235,235,235,.99), rgba(230,230,230,.99));
 	background-size: cover;
+	text-decoration: none;
 }
 
 #my-projects .card:hover {
